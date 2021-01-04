@@ -36,7 +36,7 @@ function preload() {
   winImg = loadImage("images/win.jpg");
   looseImg = loadImage("images/loose.jpg");
   winSound= loadSound("sound/win.mp3");
-  looseSound= loadSound("sound/ loose.mp3");
+  looseSound= loadSound("sound/loose.mp3");
   fruitGroup = new Group();
 }
 function setup() {
