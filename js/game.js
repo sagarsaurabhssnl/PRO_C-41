@@ -128,14 +128,14 @@ class Game {
             if (player.rank !== null) {
                 player.rank += 1;
                 Player.rankUpdate(player.rank);
-                if (player.rank === 1) {
+               if (player.rank === 1) {
                     rank = player.rank;
                     alert("Congratulations! You are the Winner!");
-                    playSound(winSound);
+                    winSound.play();
                 } else if (player.rank === 2) {
                     rank = player.rank;
                     alert("Unfortunately you have lost this round!");
-                    playSound(looseSound);
+                    looseSound.play();
                 }
                 rankCheck = 1;
             }
