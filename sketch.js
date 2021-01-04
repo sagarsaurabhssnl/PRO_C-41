@@ -15,6 +15,7 @@ var playerCount = 0;
 var allPlayers;
 var inputName;
 var rankCheck = 0;
+var rank;
 
 var player, form, game;
 var player1, player2;
@@ -63,9 +64,9 @@ function draw() {
     clear();
     imageMode(CENTER);
     game.end();
-    if (player.rank && player.rank === 1) {
+    if (rank===1) {
       image(winImg, 500, 300);
-    } else if (player.rank && player.rank === 2) {
+    } else if (rank===2) {
       image(looseImg, 500, 300);
     }
   }
